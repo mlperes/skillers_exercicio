@@ -48,11 +48,11 @@ ex05/
    ruby lib/main.rb
    ```
 
-   O programa solicitará que você digite uma idade. Insira a idade e pressione Enter para obter a categoria correspondente.
+   O programa solicitará que você digite um número. Insira o número e pressione Enter para saber ao final qual deles é o maior.
 
 ## Implementação da Lógica
 
-O arquivo `lib/greatest_of_three.rb` contém a função `greatest_of_three(age)` que deve ser implementada para determinar a categoria com base na idade.
+O arquivo `lib/greatest_of_three.rb` contém a função `greatest_of_three` que deve ser implementada para determinar qual número é o maior dentre os três números digitados.
 
 ```ruby
 # lib/greatest_of_three.rb

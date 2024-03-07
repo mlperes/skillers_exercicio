@@ -4,10 +4,10 @@
 
 Este projeto faz parte do curso skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário inserir três números e verifica o maior número. O exercício consiste em:
 
-Maior de Três Números:
+Conferência de notas escolares:
 
-- Solicite ao usuário três números.
-- Determine e imprima o maior dos três números.
+- Solicite ao usuário que insira a nota do aluno.
+- Determine se a nota é suficiente para aprovação ou se o aluno foi reprovado.
 
 ## Estrutura do Projeto
 
@@ -48,7 +48,7 @@ ex06/
    ruby lib/main.rb
    ```
 
-  O programa solicitará que você digite um número float. Insira o número e pressione Enter para obter as informações.
+  O programa solicitará que você digite um número. Insira o número e pressione Enter para obter as informações.
 
 ## Implementação da Lógica
 

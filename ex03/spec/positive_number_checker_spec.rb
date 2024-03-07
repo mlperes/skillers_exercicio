@@ -8,6 +8,11 @@ RSpec.describe '#positive_number_checker' do
       expect(result).to eq('Positivo')
     end
 
+    it 'returns "Positivo"' do
+      result = positive_number_checker(232425)
+      expect(result).to eq('Positivo')
+    end
+
     it 'returns "Positivo" for decimal numbers' do
       result = positive_number_checker(3.14)
       expect(result).to eq('Positivo')
@@ -29,7 +34,7 @@ RSpec.describe '#positive_number_checker' do
   context 'when the number is zero' do
     it 'returns "Negativo" for zero' do
       result = positive_number_checker(0)
-      expect(result).to eq('Negativo')
+      expect(result).to eq('Neutro')
     end
   end
 end

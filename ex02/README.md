@@ -4,9 +4,9 @@
 
 Este projeto é parte do curso Skill.dev e tem como objetivo desenvolver um programa em Ruby que solicita ao usuário duas idades, verifica se são iguais e imprime uma mensagem correspondente. O exercício consiste em:
 
-- Solicitar ao usuário duas idades.
-- Verificar se as idades são iguais.
-- Imprimir uma mensagem correspondente.
+- Solicitar ao usuário um número.
+- Verificar se os números são pares ou ímpares.
+- Imprimir uma mensagem correspondente. Even(Par) ou Odd(Ímpar).
 
 ## Estrutura do Projeto
 
@@ -47,11 +47,11 @@ $ bundle install
 $ ruby lib/main.rb
 ```
 
-   O programa solicitará que você digite duas idades. Insira as idades e pressione Enter para obter a mensagem correspondente.
+   O programa solicitará que você digite um número. Insira o número e pressione Enter para obter a mensagem correspondente.
 
 ## Implementação da Lógica
 
-O arquivo `lib/even_odd.rb` contém a função `even_odd(number)` que deve ser implementada para comparar as duas idades.
+O arquivo `lib/even_odd.rb` contém a função `even_odd(number)` que deve ser implementada para mostrar se é ímpar ou par.
 
 ```ruby
 # lib/even_odd.rb
@@ -104,13 +104,10 @@ O arquivo `lib/typing.rb` contém a função `typing` que pode ser usada para so
 # lib/typing.rb
 
 def typing
-  puts "Digite o primeiro número: "
-  number1 = gets.chomp.to_i
+  puts "Digite o número: "
+  number = gets.chomp.to_i
 
-  puts "Digite o segundo número: "
-  number2 = gets.chomp.to_i
-
-  [number1, number2]
+  number
 end
 ```
 
@@ -126,16 +123,13 @@ require_relative 'typing'
 
 def main
   numbers = typing
-  result = even_odd(numbers[0], numbers[1])
+  result = even_odd(number)
 
-  if result
-    puts "As idades são iguais."
-  else
-    puts "As idades são diferentes."
-  end
+  puts "O #{number} é #{result}"
+
 end
 
 main
 ```
 
-Agora, ao executar `ruby lib/main.rb`, o programa solicitará dois números e informará se eles são iguais ou diferentes.
+Agora, ao executar `ruby lib/main.rb`, o programa solicitará um número e informará se é impar ou par.
